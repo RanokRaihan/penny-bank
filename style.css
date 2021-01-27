@@ -1,5 +1,125 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.main-form {
+    margin-top: 35px;
+    width: 100%;
+    padding: 20px;
+}
+.main-header {
+    text-align: center;
+    font-size: 50px;
+    margin-top:100px;
+    color: #00abb2;
+}
+.form-wrapper {
+    width: 100%;
+    min-width: 350px;
+    max-width: 900px;
+    padding: 20px 30px;
+    box-shadow: 5px 5px 10px #444;
+    border-radius: 15px;
+    margin: 0 auto;
+    min-height: 350px;
+    margin-top: 30px;
+    /* display: none; */
+}
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 1px solid #acc;
+    outline: none;
+}
+.form-wrapper h4 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+.btn {
+    padding: 10px 20px;
+    color: #fff;
+    background: #24b430;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover {
+    background: #29c936;
+    transform: translateX(2px);
+}
+
+/* second page */
+.main-content{
+    display: none;
+}
+.container {
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.monitor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.single-monitor {
+    /* background: #a3c; */
+    border-radius: 8px;
+    padding: 20px;
+    color: #fff;
+    min-width: 290px;
+    height: 180px;
+    margin: 20px 0;
+}
+.single-monitor h3 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+.single-monitor span {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.withdraw-monitor {
+    background: cornflowerblue;
+}
+.deposit-monitor {
+    background: coral;
+}
+.balance-monitor {
+    background: darkorange;
+}
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.deposit-form,
+.withdraw-form {
+    padding: 15px;
+    box-shadow: 5px 5px 10px #333;
+    width:45%;
+    min-width:400px;
+    border-radius: 8px;
 }

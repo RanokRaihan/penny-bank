@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to penny bank</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <main>
 
-  </main> 
-  <script src="main.js"></script> 
+<body>
+    <main>
+        <h1 class="main-header">Welcome to penny bank</h1>
+        <section class="main-form">
+            <div class="form-wrapper">
+                <h4>Log In</h4>
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button class="login-btn btn">Log In</button>
+            </div>
+        </section>
+        <section class="main-content">
+            <div class="container">
+                <div class="monitor">
+                    <div class="single-monitor deposit-monitor">
+                        <h3>deposite</h3>
+                        <span>$</span> <span class="deposit"></span>
+                    </div>
+                    <div class="single-monitor withdraw-monitor">
+                        <h3>Withdraw</h3>
+                        <span>$</span><span class="withdraw"></span>
+                    </div>
+                    <div class="single-monitor balance-monitor">
+                        <h3>Balance</h3>
+                        <span>$</span><span class="balance"></span>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div class="deposit-form">
+                        <h1>Deposit</h1>
+                        <input type="number" class="depo-inp" placeholder="$ Amount you want to deposit">
+                        <button class="btn btn-deposit">Deposit</button>
+                    </div>
+                    <div class="withdraw-form">
+                        <h1>Withdraw</h1>
+                        <input type="number" class="with-inp" placeholder="$ Amount you want to withdraw">
+                        <button class="btn btn-withdraw">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
 </body>
+
 </html>
